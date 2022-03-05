@@ -42,3 +42,20 @@ If the joints are too big for you to see how they are aligned, you can select DH
 
 # License
 Not for commercial use, even if modified. Attribution not needed but is appreciated.
+
+# Notice
+As of 06/03/22 I have stopped providing any support regarding this script due to lack of time and some serious health issues. However I am putting together a FAQ for the more common issues.
+
+# FAQ
+###  Q. Error: IOError: file <maya console> line 42:
+File path error, make sure the files are in the same folder, and the correct path is specified in the script as per tutorial.
+  
+###  Q. Error: ValueError: file <maya console> line 32: More than one object matches name: spine_05
+check DAG  paths for the meshes and bones involved. Also check namespaces.
+  
+### Q. Error: ValueError: file <maya console> line 125: No object matches name: rigLogicNode.jntTranslationOutputs[0]
+Check the tutorial properly and make sure to rename rig logic node
+	
+### Q. New_Mesh.py line 13: (kInvalidParameter): No element at given index"
+Check if the new mesh's name is correctly written in the script and its not part of a group of heirarchy. 
+	
